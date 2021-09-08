@@ -1,0 +1,69 @@
+body,
+html {
+	width: 100%;
+	background: rgb(0,255,250);
+	background: linear-gradient(15deg, rgba(0,255,250,0.1) 0%, rgba(217,255,142,0.2) 37%, rgba(214,255,154,0.3) 57%, rgba(0,184,63,0.3) 91%);
+	font-size: 16px;
+}
+.person {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 32px;
+	width: 730px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	list-style: none;
+	font-weight: 500;
+}
+.person__info {
+	margin-bottom: 32px;
+}
+.person__contacts {
+	padding-right: 32px;
+	font-weight: 700;
+}
+.person__details {
+	/* добавьте ваш код  */
+}
+.avatar {
+	/* добавьте ваш код  */
+}
+.avatar__picture {
+	border-radius: 50%;
+	border: #fff 32px solid;
+	width: 360px;
+}
+.contacts {
+	/* добавьте ваш код  */
+}
+.contacts__name {
+	font-size: 32px;
+	font-weight: 700;
+}
+.contacts__role {
+	font-size: 19.2px;
+	font-weight: 700;
+	padding-bottom: 32px;
+}
+.contacts__item {
+	/* добавьте ваш код  */
+}
+.contacts__title {
+	font-style: italic;
+	font-weight: 700;
+}
+.contacts__title:after {
+	/* добавьте ваш код  */
+}
+.contacts__link {
+	color: grey;
+	font-style: italic;
+}
+.paragraph {
+	margin: 16px 0;
+}
+.paragraph_last {
+	padding-bottom: 48px;
+}
