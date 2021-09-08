@@ -29,11 +29,18 @@ html {
 }
 .avatar {
 	/* добавьте ваш код  */
+	
 }
 .avatar__picture {
 	border-radius: 50%;
 	border: #fff 32px solid;
 	width: 360px;
+	transition: .7s ease-in ;
+	transform-origin: left;
+}
+.avatar__picture:hover {
+	transform: rotate(180deg)
+	 /* translateX(300px); */
 }
 .contacts {
 	/* добавьте ваш код  */
@@ -53,6 +60,10 @@ html {
 .contacts__title {
 	font-style: italic;
 	font-weight: 700;
+}
+.contacts__title::after {
+	content: ":";
+
 }
 .contacts__title:after {
 	/* добавьте ваш код  */
