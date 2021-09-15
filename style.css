@@ -1,0 +1,157 @@
+body,
+html {
+	width: 100%;
+	background: rgb(0,255,250);
+	background: linear-gradient(15deg, rgba(0,255,250,0.1) 0%, rgba(217,255,142,0.2) 37%, rgba(214,255,154,0.3) 57%, rgba(0,184,63,0.3) 91%);
+	font-size: 16px;
+	overflow-x: hidden;
+}
+.person {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-top: 2rem;
+	width: 730px;
+	margin: 0 auto;
+	list-style: none;
+	font-weight: 500;
+}
+.person__info {
+	margin-bottom: 2rem;
+}
+.person__contacts {
+	padding-right: 2rem;
+	font-weight: 700;
+}
+
+.avatar__picture {
+	border-radius: 50%;
+	border: #fff 32px solid;
+	width: 360px;
+	transition: transform .7s ease-in ;
+	z-index: 10;
+
+	animation-name: small-large;
+	animation-duration: 1.5s;
+}
+.avatar__picture:hover {
+	transform: translateX(100%) rotate(360deg);
+}
+
+.contacts__name {
+	font-size: 2rem;
+	font-weight: 700;
+
+	animation-name: top-down;
+	animation-duration: 1.5s;
+}
+.contacts__role {
+	font-size: 1.2rem;
+	font-weight: 700;
+	padding-bottom: 2rem;
+
+	animation-name: top-down;
+	animation-duration: 1.5s;
+}
+.contacts__item:nth-child(1) {
+	animation-name: emergence;
+	animation-duration: 3s;
+}
+.contacts__item:nth-child(2) {
+	animation-name: emergence;
+	animation-duration: 3.5s;
+}
+.contacts__item:nth-child(3) {
+	animation-name: emergence;
+	animation-duration: 4s;
+}
+
+.contacts__title {
+	font-style: italic;
+	font-weight: 700;
+}
+.contacts__title::after {
+	content: ":";
+}
+
+.contacts__link {
+	color: grey;
+	font-style: italic;
+}
+.paragraph {
+	margin: 1rem 0;
+}
+.paragraph_last {
+	padding-bottom: 3rem;
+	animation-name: emergence;
+	animation-duration: 4.5s;
+	animation-timing-function: ease-out;
+}
+.paragraph:nth-child(1) {
+	animation-name: left-right;
+	animation-duration: 4.5s;
+}
+.paragraph:nth-child(2) {
+	animation-name: right-left;
+	animation-duration: 4.5s;
+}
+
+
+/* Animations */
+
+
+@keyframes left-right{
+	0% {
+		transform: translateX(-3000px);
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes right-left {
+	0% {
+		transform: translateX(3000px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes top-down {
+	0% {
+		transform: translateY(-3000px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+@keyframes emergence {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes small-large {
+	0% {
+		transform: scale(0);
+		border: none;
+	}
+	50% {
+		border: #fff 1rem solid;
+	}
+	}
+	75% {
+		border: #fff 1.5rem solid;
+	}
+	100% {
+		transform: scale(1);
+	}
+}
